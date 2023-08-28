@@ -7,9 +7,18 @@ const cors        = require('cors');
 const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
-
+const db = require("./db.js")
+const helmet = require('helmet')
 const app = express();
-
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+     "default-src": ["'self'"],
+     "script-src": ["'self'"],
+     "style-src": ["'self'"]
+    }
+  })
+);
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.use(cors({origin: '*'})); //For FCC testing purposes only
