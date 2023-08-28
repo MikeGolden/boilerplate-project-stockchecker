@@ -1,6 +1,7 @@
 'use strict';
-const fetch = require('node-fetch');
+import 'node-fetch';
 const Stock = require('../model.js').Stock;
+
 
 async function createStock(stockSymbol, like, ip) {
   const newStock = new Stock({
