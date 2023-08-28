@@ -13,9 +13,11 @@
 		"dotenv": "^8.2.0",
 		"express": "^4.14.0",
 		"helmet": "^3.1.0",
-		"mocha": "^10.2.0",
-		"mongoose": "^7.3.1",
-		"node-fetch": "^2.6.11"
+		"mocha": "^3.2.0",
+		"mongodb": "^5.5.0",
+		"mongoose": "^5.0.0",
+		"node-fetch": "^2.6.11",
+		"request-promise-native": "^1.0.9"
 	},
 	"repository": {
 		"type": "git",
