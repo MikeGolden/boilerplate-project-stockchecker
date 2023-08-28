@@ -1,6 +1,6 @@
 "use strict";
 const StockModel = require("../models").Stock;
-//const fetch = require("node-fetch");
+const fetch = require("node-fetch");
 
 async function createStock(stock, like, ip) {
   const newStock = new StockModel({
