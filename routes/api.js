@@ -1,5 +1,4 @@
 'use strict';
-import 'node-fetch';
 const Stock = require('../model.js').Stock;
 
 
